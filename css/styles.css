@@ -410,7 +410,7 @@ img {
   padding: 12px;
   color: #afb1b8;
   border-radius: 50%;
-  
+
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
@@ -918,7 +918,7 @@ color: var(--accent-color);
   margin-left: 70px;
 }
 
-.footer__text {
+.footer__call {
   margin-bottom: 20px;
   text-align: left;
   font-weight: 700;
@@ -941,21 +941,11 @@ color: var(--accent-color);
 
 /* E-mail input */
 
-.input {
+.footer__form {
   margin-left: auto;
 }
 
-.input-text {
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  line-height: 1.14;
-  line-height: 16px;
-  color: var(--basic-white);
-  text-transform: uppercase;
-}
-
-.input input[type='email'] {
+.subscr-form__input {
 
   padding: 14px 14px;
 
@@ -971,7 +961,7 @@ color: var(--accent-color);
   border-radius: 4px;
 }
 
-.input-btn {
+.subscr-btn {
   margin-left: 12px;
   padding: 10px 25px 10px 27px;
 
@@ -987,7 +977,7 @@ color: var(--accent-color);
   border-radius: 4px;
 }
 
-.input-icon {
+.subscr-btn__icon {
   margin-left: 10px;
   vertical-align: middle;
 }
