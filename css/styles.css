@@ -275,12 +275,12 @@ nav {
   padding-bottom: 0;
 }
 
-.feature-set {
+.feature-list {
   display: flex;
   gap: 30px;
 }
 
-.feature-set__item {
+.feature-list__item {
   width: 270px;
 }
 
@@ -352,20 +352,20 @@ img {
 
 /* Section Our team */
 
-.section.team {
+.team-section {
   background-color: #f5f4fa;
 }
 
-.team.list {
+.team-list {
   display: flex;
   gap: 30px;
 }
 
-.team.list .teammate {
+.teammate {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.team.list .card {
+.teammate__meta {
   width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -375,13 +375,13 @@ img {
   background-color: var(--basic-white);
 }
 
-.foto {
+.teammate__foto {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.name {
+.teammate__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -390,7 +390,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.position {
+.teammate__position {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
