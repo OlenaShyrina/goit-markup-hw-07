@@ -27,8 +27,12 @@
         <a class="logo" href="./index.html"><span class="logo__bit">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li class="site-nav__item site-nav__item--current"><a class="site-nav__link site-nav__link--current" href="">Студия</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item site-nav__item--current">
+              <a class="site-nav__link site-nav__link--current" href="">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
             <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
@@ -67,50 +71,59 @@
         <div class="container">
           <h2 hidden class="section__title">Особенности</h2>
           <ul class="feature-set list">
-            <li class="feature-set__card">
-                <svg class="feature-set__icon" width="70" height="70">
+            <li class="feature-set__item">
+              <div class="feature">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
-              <div class="feature-set__meta">
-                <h3 class="feature-title">Внимание к деталям</h3>
-              <p class="description">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
+                <div class="feature__meta">
+                  <h3 class="feature__title">Внимание к деталям</h3>
+                  <p class="feature__description">
+                    Идейные соображения, а также начало повседневной работы по формированию позиции.
+                  </p>
+                </div>
               </div>
-
             </li>
-            <li class="feature-set__card">
-                <svg class="feature-set__icon" width="70" height="70">
+            <li class="feature-set__item">
+              <div class="feature">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-              <div class="feature-set__meta">
-                <h3 class="feature-title">Пунктуальность</h3>
-              <p class="description">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
+                <div class="feature__meta">
+                  <h3 class="feature__title">Пунктуальность</h3>
+                  <p class="feature__description">
+                    Задача организации, в особенности же рамки и место обучения кадров влечет за
+                    собой.
+                  </p>
+                </div>
               </div>
             </li>
-            <li class="feature-set__card">
-                <svg class="feature-set__icon" width="70" height="70">
+            <li class="feature-set__item">
+              <div class="feature">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
-              <div class="feature-set__meta">
-                <h3 class="feature-title">Планирование</h3>
-              <p class="description">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
+                <div class="feature__meta">
+                  <h3 class="feature__title">Планирование</h3>
+                  <p class="feature__description">
+                    Равным образом консультация с широким активом в значительной степени
+                    обуславливает.
+                  </p>
+                </div>
               </div>
             </li>
-            <li class="feature-set__card">
-                <svg class="feature-set__icon" width="70" height="70">
+            <li class="feature-set__item">
+              <div class="feature">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-           <div class="feature-set__meta">
-            <h3 class="feature-title">Современные технологии</h3>
-              <p class="description">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
-           </div>
+                <div class="feature__meta">
+                  <h3 class="feature__title">Современные технологии</h3>
+                  <p class="feature__description">
+                    Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                  </p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -386,9 +399,9 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-            
-            <form>
-              <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <form>
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
             <div class="modal-form">
               <div class="form-field">
                 <label for="name">Имя</label>
@@ -416,29 +429,26 @@
 
               <div class="form-field comment">
                 <label for="comment">Комментарий</label>
-                <textarea
-                  name="comment"
-                  id="comment"
-                  placeholder="Введите текст"
-                ></textarea>
+                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
               </div>
             </div>
 
-                <div class="agreement">
-                  <input class="checkbox" type="checkbox" name="checkbox" value="" id="checkbox"/>
-                  <svg class="icon-active" width="16" height="15">
-                    <use href="./images/icons.svg#icon-active"></use>
-                  </svg>
-                  <svg class="icon-nonactive" width="16" height="15">
-                    <use href="./images/icons.svg#icon-nonactive"></use>
-                  </svg>
-                 <label class="label" for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></label>
-                </div> 
+            <div class="agreement">
+              <input class="checkbox" type="checkbox" name="checkbox" value="" id="checkbox" />
+              <svg class="icon-active" width="16" height="15">
+                <use href="./images/icons.svg#icon-active"></use>
+              </svg>
+              <svg class="icon-nonactive" width="16" height="15">
+                <use href="./images/icons.svg#icon-nonactive"></use>
+              </svg>
+              <label class="label" for="checkbox"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="modal-link" href="">Условия договора</a></label
+              >
+            </div>
 
-              <button class="btn-send" type="submit">Отправить</button>
-           
-            </form>
-
+            <button class="btn-send" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
@@ -513,6 +523,5 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-   
   </body>
 </html>

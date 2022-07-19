@@ -284,7 +284,7 @@ nav {
   width: 270px;
 }
 
-.feature-set__icon {
+.feature__icon {
   padding: 25px 100px;
   width: 270px;
   height: 120px;
@@ -294,7 +294,7 @@ nav {
   border-radius: 4px;
 }
 
-.feature-title {
+.feature__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -303,7 +303,7 @@ nav {
   text-transform: uppercase;
 }
 
-.description {
+.feature__description {
   width: 270px;
   line-height: 1.71;
 }
