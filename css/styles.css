@@ -403,7 +403,7 @@ img {
   gap: 10px;
 }
 
-.socials .link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,11 +411,14 @@ img {
   color: #afb1b8;
   border-radius: 50%;
 
+  text-decoration: none;
+  color: inherit;
+
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.socials .link:hover,
-.socials .link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
   color: var(--basic-white);
 }
@@ -426,19 +429,19 @@ img {
 
 /* Clients */
 
-.clients.list {
+.clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.clients.list .item {
+.clients-list__item {
   width: 170px;
   height: 92px;
 }
 
-.client-link {
+.client__link {
   display: block;
   width: 100%;
   height: 100%;
@@ -450,8 +453,8 @@ img {
   transition: fill 250ms var(--cubic), border 250ms var(--cubic);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -927,15 +930,15 @@ color: var(--accent-color);
   color: var(--basic-white);
 }
 
-.socials .footer-link {
+.social__link--white {
   color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms var(--cubic);
 }
 
-.socials.footer .link:hover,
-.socials.footer .link:focus {
+.social__link--white:hover,
+.social__link--white:focus {
   background-color: var(--accent-color);
 }
 
