@@ -310,7 +310,7 @@ nav {
 
 /* Section What we do */
 
-.wedo.list {
+.wedo-list {
   display: flex;
   gap: 30px;
 }
@@ -338,7 +338,7 @@ img {
   position: relative;
 }
 
-.wedo .label {
+.wedo-card__label {
   position: absolute;
   left: 83px;
   bottom: 27px;
