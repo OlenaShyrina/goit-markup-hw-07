@@ -884,7 +884,7 @@ color: var(--accent-color);
   margin-bottom: 20px;
 }
 
-.address {
+.footer__address {
   font-style: normal;
   color: var(--basic-white);
 }
@@ -893,8 +893,7 @@ color: var(--accent-color);
   margin-top: 9px;
 }
 
-.mail__link,
-.tel__link {
+.footer-contacts__link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -902,10 +901,8 @@ color: var(--accent-color);
   transition: color 250ms var(--cubic);
 }
 
-.mail__link:hover,
-.mail__link:focus,
-.tel__link:hover,
-.tel__link:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
