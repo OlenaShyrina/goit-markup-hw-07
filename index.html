@@ -36,8 +36,8 @@
             <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li class="contact-list__item">
+        <ul class="contacts-list list">
+          <li class="contacts-list__item">
             <div class="contact">
               <a class="contact__link" href="mailto:info@devstudio.com">
                 <svg class="contact__icon" width="16" height="12">
@@ -47,7 +47,7 @@
               </a>
             </div>
           </li>
-          <li class="contact-list__item">
+          <li class="contacts-list__item">
             <div class="contact">
               <a class="contact__link" href="tel:+380991111111">
                 <svg class="contact__icon" width="10" height="16">
@@ -66,7 +66,7 @@
       <section class="hero hero-overlay">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -74,8 +74,8 @@
       <section class="section features-section">
         <div class="container">
           <h2 hidden class="section__title">Особенности</h2>
-          <ul class="feature-list list">
-            <li class="feature-list__item">
+          <ul class="features-list list">
+            <li class="features-list__item">
               <div class="feature">
                 <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -88,7 +88,7 @@
                 </div>
               </div>
             </li>
-            <li class="feature-list__item">
+            <li class="features-list__item">
               <div class="feature">
                 <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -102,7 +102,7 @@
                 </div>
               </div>
             </li>
-            <li class="feature-list__item">
+            <li class="features-list__item">
               <div class="feature">
                 <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -116,7 +116,7 @@
                 </div>
               </div>
             </li>
-            <li class="feature-list__item">
+            <li class="features-list__item">
               <div class="feature">
                 <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -140,19 +140,19 @@
           <ul class="wedo-list list">
             <li class="wedo-list__item">
               <div class="wedo-card">
-                <img src="./images/box1.jpg" alt="Десктопные приложения" width="370" height="294" />
+                <img class="wedo-card__img" src="./images/box1.jpg" alt="Десктопные приложения" width="370" height="294" />
                 <p class="wedo-card__label">Десктопные приложения</p>
               </div>
             </li>
             <li class="wedo-list__item">
               <div class="wedo-card">
-                <img src="./images/box2.jpg" alt="Мобильные приложения" width="370" height="294" />
+                <img class="wedo-card__img" src="./images/box2.jpg" alt="Мобильные приложения" width="370" height="294" />
                 <p class="wedo-card__label">Мобильные приложения</p>
               </div>
             </li>
             <li class="wedo-list__item">
               <div class="wedo-card">
-                <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
+                <img class="wedo-card__img" src="./images/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
                 <p class="wedo-card__label">Дизайнерские решения</p>
               </div>
             </li>
@@ -441,8 +441,8 @@
 
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
-          <button data-modal-close class="btn" type="button">
-            <svg class="btn__icon" width="18" height="18">
+          <button data-modal-close class="btn-close" type="button">
+            <svg class="btn-close__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
@@ -508,12 +508,18 @@
             ><span class="logo__bit">Web</span><span class="logo__bit--inverse">Studio</span>
           </a>
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="footer-contact list">
-            <li class="footer-contact__item">
-              <a class="footer-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="footer-contacts list">
+            <li class="footer-contacts__item">
+              <div class="mail">
+                <a class="mail__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              </div>
             </li>
-            <li class="footer-contact__item">
-              <a class="footer-contact__link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="footer-contacts__item">
+             <div class="tel">
+              <a class="tel__link" href="tel:+380991111111">+38 099 111 11 11</a>
+             </div>
             </li>
           </ul>
         </div>
@@ -566,9 +572,9 @@
           <p class="footer__call">Подпишитесь на рассылку</p>
           <form class="subscr-form">
             <input class="subscr-form__input" type="email" name="mail" placeholder="E-mail" />
-            <button class="subscr-btn" type="button">
+            <button class="btn-subscr" type="button">
               Подписаться
-              <svg class="subscr-btn__icon" width="24" height="24">
+              <svg class="btn-subscr__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
