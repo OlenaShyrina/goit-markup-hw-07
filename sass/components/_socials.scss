@@ -1,15 +1,11 @@
  
   .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     gap: 10px;
   }
   
   .social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     padding: 12px;
     color: #afb1b8;
     border-radius: 50%;

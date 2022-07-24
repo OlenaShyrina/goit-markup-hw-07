@@ -5,9 +5,7 @@
   }
   
   .contact__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     padding-top: 32px;
     padding-bottom: 31px;
   

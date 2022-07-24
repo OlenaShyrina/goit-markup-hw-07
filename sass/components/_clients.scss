@@ -1,7 +1,5 @@
 .clients-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     gap: 30px;
   }
   

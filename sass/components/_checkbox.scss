@@ -1,9 +1,8 @@
 .checkbox {
     position: relative;
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
+
     margin-bottom: 30px;
   
     line-height: 1.71;
@@ -47,10 +46,10 @@
     opacity: 1;
   
     transition: opacity 250ms var(--cubic)
+  }
 
-    .checkbox__input:checked ~ & {
-      opacity: 0;
-    }
+  .checkbox__input:checked ~ .checkbox__icon--nonactive {
+    opacity: 0;
   }
   
   .checkbox__link {
