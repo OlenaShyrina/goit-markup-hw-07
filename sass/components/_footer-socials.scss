@@ -16,10 +16,12 @@
     background-color: rgba(255, 255, 255, 0.1);
   
     transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
   
-  .social__link--white:hover,
-  .social__link--white:focus {
-    background-color: var(--accent-color);
-  }
+
   

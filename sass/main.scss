@@ -10,18 +10,22 @@
 @import './components/filters';
 @import './components/footer-input';
 @import './components/footer-socials';
-@import './components/footer';
 @import './components/form';
-@import './components/header';
 @import './components/hero';
-@import './components/link';
 @import './components/logo';
-@import './components/modal';
 @import './components/ourteam';
 @import './components/site-nav';
+@import './components/socials';
+@import './components/teammate-card';
 @import './components/textarea';
 @import './components/title';
 @import './components/wedo-section';
 @import './components/works';
 @import './components/checkbox';
+
+@import './layout/container';
+@import './layout/header';
+@import './layout/section';
+@import './layout/footer';
+@import './layout/modal';
 

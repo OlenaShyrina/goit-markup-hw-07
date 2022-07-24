@@ -30,9 +30,11 @@
     text-decoration: none;
   
     transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   
-  .footer-contacts__link:hover,
-  .footer-contacts__link:focus {
-    color: var(--accent-color);
-  }
+ 

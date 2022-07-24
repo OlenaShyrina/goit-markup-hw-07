@@ -36,20 +36,21 @@
     opacity:0;
   
     transition: opacity 250ms var(--cubic);
+
+    .checkbox__input:checked + & {
+      opacity: 1;
+    }
   }
   
-  .checkbox__input:checked + .checkbox__icon--active {
-    opacity: 1;
-  }
-  
+
   .checkbox__icon--nonactive {
     opacity: 1;
   
     transition: opacity 250ms var(--cubic)
-  }
-  
-  .checkbox__input:checked ~ .checkbox__icon--nonactive{
-    opacity: 0;
+
+    .checkbox__input:checked ~ & {
+      opacity: 0;
+    }
   }
   
   .checkbox__link {

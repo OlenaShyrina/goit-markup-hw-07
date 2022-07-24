@@ -41,18 +41,13 @@
     border-radius: 4px;
   
     transition: border 250ms var(--cubic);
-  }
-  
-  .form-field__input:hover,
-  .form-field__input:focus {
-    outline: 1px solid var(--accent-color);
-    cursor: pointer;
-  
-  }
-  
-  .form-field__input:hover + .form-field__icon,
-  .form-field__input:focus + .form-field__icon {
-    fill: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      outline: 1px solid var(--accent-color);
+      cursor: pointer;
+    
+    }
   }
   
   .form-field__icon {
@@ -61,4 +56,9 @@
    top: 29px;
   
    transition: fill 250ms var(--cubic);
+
+   .form-field__input:hover + &,
+   .form-field__input:focus + & {
+     fill: var(--accent-color);
+   }
   }

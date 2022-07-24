@@ -20,11 +20,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
-  }
-  
-  .contact__link:hover,
-  .contact__link:focus {
-    color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   
   .contact__icon {
@@ -34,9 +34,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
   
-  .contact__icon:hover,
-  .contact__icon:focus {
-    fill: var(--accent-color);
-  }
+ 

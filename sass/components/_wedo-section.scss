@@ -7,21 +7,21 @@
     display: block;
   }
   
-  .wedo-card::before {
-    content: '';
-  
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  
-    display: inline-block;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  
   .wedo-card {
     position: relative;
+
+    &::before {
+      content: '';
+    
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    
+      display: inline-block;
+      width: 100%;
+      height: 70px;
+      background-color: rgba(47, 48, 58, 0.8);
+    }
   }
   
   .wedo-card__label {

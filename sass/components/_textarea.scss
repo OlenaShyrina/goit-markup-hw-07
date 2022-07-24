@@ -13,21 +13,27 @@
     resize: none;
   
     transition: outline 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      outline: 1px solid var(--accent-color);
+      cursor: pointer;
+    }
   }
   
-  .comment__label::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-  
-    color: rgba(117, 117, 117, 0.5);
-  
+  .comment_label {
+    
+    .&::placeholder {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+    
+      color: rgba(117, 117, 117, 0.5);
+    
+    }
   }
   
-  .comment__text:hover,
-  .comment__text:focus {
-    outline: 1px solid var(--accent-color);
-    cursor: pointer;
-  }
+  
+
   
   

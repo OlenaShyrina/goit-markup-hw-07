@@ -1,0 +1,28 @@
+ 
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    color: #afb1b8;
+    border-radius: 50%;
+  
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--basic-white);
+    }
+  }
+  
+  .social__icon {
+    fill: currentColor;
+  }
